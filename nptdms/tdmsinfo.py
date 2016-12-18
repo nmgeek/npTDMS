@@ -1,9 +1,10 @@
 from __future__ import print_function
 
+import sys
 from argparse import ArgumentParser
 import logging
 
-from nptdms import tdms
+import tdms
 
 
 def main():
@@ -59,3 +60,6 @@ def display_properties(tdms_object, level):
 
 def display(s, level):
     print("%s%s" % (" " * 2 * level, s))
+
+if __name__ == "__main__":
+    main()
